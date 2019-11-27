@@ -1,0 +1,1 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"><!-- pressed --><item android:state_pressed="true" android:drawable="@drawable/edit" /><!-- focused --><item android:state_pressed="false" android:drawable="@drawable/edit" /><!-- default --><item android:state_enabled="true" android:drawable="@drawable/edit" /></selector>

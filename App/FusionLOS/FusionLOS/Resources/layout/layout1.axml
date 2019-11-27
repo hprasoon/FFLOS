@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/linearLayout1">
+    <TextView xmlns:p5="http://schemas.android.com/tools"
+        android:text="Logged in"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="78.0dp"
+        android:id="@+id/textView1"
+        p5:text="Logged in"
+        android:layout_marginBottom="14.0dp" />
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        android:text="User Name"
+        android:layout_width="match_parent"
+        android:layout_height="55.5dp"
+        android:id="@+id/textView1"
+        tools:text="User Name" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="354.0dp"
+        android:id="@+id/linearLayout2">
+    <!--<TextView
+            android:text="row one"
+            android:textSize="15pt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:text="row two"
+            android:textSize="15pt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:text="row three"
+            android:textSize="15pt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:text="row four"
+            android:textSize="15pt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />-->
+    </LinearLayout>
+</LinearLayout>
