@@ -129,11 +129,14 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\InstantEligibilityController.cs" />
     <Compile Include="Controllers\MailController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Models\Eligibilityparameters.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ML_Service_Call.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Loan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
