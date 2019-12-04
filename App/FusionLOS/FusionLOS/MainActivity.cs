@@ -23,8 +23,8 @@ namespace FusionLOS
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            TextView textAuthentication = FindViewById<TextView>(Resource.Id.textAuthentication);
-            textAuthentication.Visibility = ViewStates.Invisible;
+            //TextView textAuthentication = FindViewById<TextView>(Resource.Id.textAuthentication);
+            //textAuthentication.Visibility = ViewStates.Invisible;
             FindViewById<Button>(Resource.Id.btnSubmit).Click += MainActivity_Click;
         }
 
@@ -158,21 +158,21 @@ namespace FusionLOS
 
         private void MainActivity_Click(object sender, System.EventArgs e)
         {
-            editText1 = FindViewById<EditText>(Resource.Id.editText1);
+            //editText1 = FindViewById<EditText>(Resource.Id.editText1);
             editText2 = FindViewById<EditText>(Resource.Id.editText2);
 
-            TextView textAuthentication = FindViewById<TextView>(Resource.Id.textAuthentication);
-            if (editText1.Text.Trim() == "avista3" && editText2.Text.Trim() == "Book@111")
-            {
-                textAuthentication.Visibility = ViewStates.Invisible;
-                //StartActivity(typeof(ListActivity));
+            //TextView textAuthentication = FindViewById<TextView>(Resource.Id.textAuthentication);
+            //if (editText1.Text.Trim() == "avista3" && editText2.Text.Trim() == "Book@111")
+            //{
+            //    textAuthentication.Visibility = ViewStates.Invisible;
+            //    //StartActivity(typeof(ListActivity));
                 StartActivity(typeof(MenuActivity));
                 Finish();
-            }
-            else
-            {
-                textAuthentication.Visibility = ViewStates.Visible;
-            }
+            //}
+            //else
+            //{
+            //    textAuthentication.Visibility = ViewStates.Visible;
+            //}
         }
     }
 

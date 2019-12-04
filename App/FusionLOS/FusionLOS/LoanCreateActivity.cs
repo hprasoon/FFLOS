@@ -102,6 +102,7 @@ namespace FusionLOS
             var httpResponse = (HttpWebResponse)request.GetResponse();
         }
 
+        
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;

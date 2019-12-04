@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Fusion LOS</string>
+  <string name="app_name">FF LOS</string>
   <string name="product_prompt">Choose a product</string>
   <string-array name="product_array">
     <item>Conforming 30 Fixed GMAC</item>

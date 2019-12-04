@@ -1,27 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:background="@drawable/bg_1">
+    android:background="@drawable/bg_6">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="212.0dp"
+        android:src="@drawable/tick"
+        android:layout_marginBottom="0.0dp" />
+
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        android:text="You are ellible for a loan of"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15.0dp"
+        android:layout_marginLeft="15.0dp"
+        android:layout_height="20dp"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        tools:text="You are ellible for a loan of" />
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        android:text="$100000"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15.0dp"
+        android:layout_marginLeft="15.0dp"
+        android:textSize="32dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        tools:text="$100000" />
     <Button
-        android:text="Create"
+        android:text="Apply"
         android:layout_width="300.0dp"
         android:layout_height="wrap_content"
         android:id="@+id/buttonCreateLoan"
         android:layout_gravity="center"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:background="#2C0980"
-        android:layout_marginLeft="0.0dp" />
-    <Button
-        android:text="My Pipeline"
-        android:layout_width="300.0dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonLoanList"
-        android:layout_gravity="center"
-        android:background="#2C0980"
-        android:layout_marginTop="8.0dp"
+        android:textColor="#FFF"
         android:layout_marginLeft="0.0dp" />
 </LinearLayout>
