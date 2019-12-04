@@ -114,43 +114,44 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FFLOSWeb\loanDetails.html" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\about-1.jpg" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\bootstrap.min.css" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\font-awesome.min.css" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\img1.jpg" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\img2.jpg" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\ionicons.css" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\jquery.mCustomScrollbar.css" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\logo2.png" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\morris.css" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\responsive.css" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\saved_resource%281%29.html" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\saved_resource%282%29.html" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\saved_resource%283%29.html" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\saved_resource.html" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\simple-line-icons.css" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\small-logo.png" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\style.css" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\weather-icons.min.css" />
+    <Content Include="FFLOSWeb\assets\about-1.jpg" />
+    <Content Include="FFLOSWeb\assets\bootstrap.min.css" />
+    <Content Include="FFLOSWeb\assets\font-awesome.min.css" />
+    <Content Include="FFLOSWeb\assets\img1.jpg" />
+    <Content Include="FFLOSWeb\assets\img2.jpg" />
+    <Content Include="FFLOSWeb\assets\ionicons.css" />
+    <Content Include="FFLOSWeb\assets\jquery.mCustomScrollbar.css" />
+    <Content Include="FFLOSWeb\assets\logo2.png" />
+    <Content Include="FFLOSWeb\assets\morris.css" />
+    <Content Include="FFLOSWeb\assets\responsive.css" />
+    <Content Include="FFLOSWeb\assets\saved_resource%281%29.html" />
+    <Content Include="FFLOSWeb\assets\saved_resource%282%29.html" />
+    <Content Include="FFLOSWeb\assets\saved_resource%283%29.html" />
+    <Content Include="FFLOSWeb\assets\saved_resource.html" />
+    <Content Include="FFLOSWeb\assets\simple-line-icons.css" />
+    <Content Include="FFLOSWeb\assets\small-logo.png" />
+    <Content Include="FFLOSWeb\assets\style.css" />
+    <Content Include="FFLOSWeb\assets\weather-icons.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Service References\MortgegeOrigination\FusionLOS.MortgegeOrigination.LosCustomerImportStatus.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="lead.json" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\bootstrap.min.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\Chart.min.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\chartjs-init.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\css" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\custom.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\jquery.dcjqaccordion.2.7.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\jquery.mCustomScrollbar.concat.min.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\jquery.min.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\morris-init.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\morris.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\popper.min.js.download" />
-    <Content Include="FFLOSWeb\Intellir - Responsive Bootstrap 4 Admin Dashboard_files\raphael-min.js.download" />
+    <Content Include="FFLOSWeb\assets\bootstrap.min.js.download" />
+    <Content Include="FFLOSWeb\assets\Chart.min.js.download" />
+    <Content Include="FFLOSWeb\assets\chartjs-init.js.download" />
+    <Content Include="FFLOSWeb\assets\css" />
+    <Content Include="FFLOSWeb\assets\custom.js.download" />
+    <Content Include="FFLOSWeb\assets\jquery.dcjqaccordion.2.7.js.download" />
+    <Content Include="FFLOSWeb\assets\jquery.mCustomScrollbar.concat.min.js.download" />
+    <Content Include="FFLOSWeb\assets\jquery.min.js.download" />
+    <Content Include="FFLOSWeb\assets\morris-init.js.download" />
+    <Content Include="FFLOSWeb\assets\morris.js.download" />
+    <Content Include="FFLOSWeb\assets\popper.min.js.download" />
+    <Content Include="FFLOSWeb\assets\raphael-min.js.download" />
     <Content Include="notification.json" />
     <Content Include="notificationMessage.json" />
+    <Content Include="FFLOSWeb\Simple-Line-Icons %281%29.woff2" />
     <None Include="Service References\MortgegeOrigination\MortgagebotOriginationImport.disco" />
     <None Include="Service References\MortgegeOrigination\configuration91.svcinfo" />
     <None Include="Service References\MortgegeOrigination\configuration.svcinfo" />
@@ -162,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ConsumerController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\InstantEligibilityController.cs" />
     <Compile Include="Controllers\LoanController.cs" />

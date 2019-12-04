@@ -81,4 +81,3 @@ C:\Sample Projects\Hack\App\FusionLOSApi\FusionLOSApi\obj\Debug\FusionLOSApi.csp
 C:\Sample Projects\Hack\App\FusionLOSApi\FusionLOSApi\obj\Debug\FusionLOSApi.csproj.CopyComplete
 C:\Sample Projects\Hack\App\FusionLOSApi\FusionLOSApi\obj\Debug\FusionLOS.dll
 C:\Sample Projects\Hack\App\FusionLOSApi\FusionLOSApi\obj\Debug\FusionLOS.pdb
-C:\Sample Projects\Hack\App\FusionLOSApi\FusionLOSApi\obj\Debug\FusionLOSApi.csprojAssemblyReference.cache
