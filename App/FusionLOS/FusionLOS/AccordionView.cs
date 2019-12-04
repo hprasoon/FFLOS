@@ -13,13 +13,13 @@ namespace FusionLOS
 		public DefaultTemplate()
 		{
 			this.Padding = 5;
-			this.HeightRequest = 50;
+			this.HeightRequest = 40;
 			var title = new Label { HorizontalTextAlignment = TextAlignment.Start, HorizontalOptions = LayoutOptions.StartAndExpand };
 			var price = new Label { HorizontalTextAlignment = TextAlignment.End, HorizontalOptions = LayoutOptions.End };
 			this.Children.Add(title, new Rectangle(0, 0.5, 0.5, 1), AbsoluteLayoutFlags.All);
 			this.Children.Add(price, new Rectangle(1, 0.5, 0.5, 1), AbsoluteLayoutFlags.All);
-			title.SetBinding(Label.TextProperty, "Date", stringFormat: "{0:dd MMM yyyy}");
-			price.SetBinding(Label.TextProperty, "Amount", stringFormat: "{0:C2}");
+			title.SetBinding(Label.TextProperty, "Document", stringFormat: "{0}");
+			price.SetBinding(Label.TextProperty, "Upload", stringFormat: "{0}");
 		}
 	}
 
@@ -74,7 +74,7 @@ namespace FusionLOS
 	{
 		private bool _isExpanded = false;
 		private StackLayout _content = new StackLayout { HeightRequest = 0 };
-		private Color _headerColor = Color.FromHex("0067B7");
+		private Color _headerColor = Color.FromHex("674CCF");
 		private ImageSource _arrowRight = ImageSource.FromFile("ic_keyboard_arrow_right_white_24dp.png");
 		private ImageSource _arrowDown = ImageSource.FromFile("ic_keyboard_arrow_down_white_24dp.png");
 		private AbsoluteLayout _header = new AbsoluteLayout();
@@ -116,7 +116,8 @@ namespace FusionLOS
 			_headerIcon.Source = _arrowRight;
 			_header.BackgroundColor = _headerColor;
 
-			_header.Children.Add(_headerIcon, new Rectangle(0, 1, .1, 1), AbsoluteLayoutFlags.All);
+
+            _header.Children.Add(_headerIcon, new Rectangle(0, 1, .1, 1), AbsoluteLayoutFlags.All);
 			_header.Children.Add(_headerTitle, new Rectangle(1, 1, .9, 1), AbsoluteLayoutFlags.All);
 
 			this.Spacing = 0;
