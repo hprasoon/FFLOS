@@ -25,17 +25,17 @@ namespace FusionLOS
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            //LoadApplication(new App());
+            //SetContentView(Resource.Layout.layout2);
 
-            SetContentView(Resource.Layout.layout2);
+            //List<Loan> objstud = GetLoans();
 
-            List<Loan> objstud = GetLoans();
-
-            studentlistView = FindViewById<ListView>(Resource.Id.listView1);
-            mlist = new List<Loan>();
-            mlist = objstud.OrderByDescending(x => x.ApplicationDate).ToList();
-            adapter = new LoanAdapter(this, mlist);
-            studentlistView.Adapter = adapter;
-            studentlistView.ItemClick += StudentlistView_ItemClick;
+            //studentlistView = FindViewById<ListView>(Resource.Id.listView1);
+            //mlist = new List<Loan>();
+            //mlist = objstud.OrderByDescending(x => x.ApplicationDate).ToList();
+            //adapter = new LoanAdapter(this, mlist);
+            //studentlistView.Adapter = adapter;
+            //studentlistView.ItemClick += StudentlistView_ItemClick;
 
             //FindViewById<Button>(Resource.Id.back).Click += ListActivity_Click;
         }

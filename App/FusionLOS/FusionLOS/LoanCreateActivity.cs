@@ -22,11 +22,11 @@ namespace FusionLOS
             // Create your application here
             SetContentView(Resource.Layout.layout5);
 
-            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner);
-            spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
-            var adapter = ArrayAdapter.CreateFromResource(this, Resource.Array.product_array, Android.Resource.Layout.SimpleSpinnerItem);
-            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            spinner.Adapter = adapter;
+            //Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner);
+            //spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            //var adapter = ArrayAdapter.CreateFromResource(this, Resource.Array.product_array, Android.Resource.Layout.SimpleSpinnerItem);
+            //adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            //spinner.Adapter = adapter;
 
             btnSubmit = FindViewById<Button>(Resource.Id.btnSubmit);
             btnBack = FindViewById<Button>(Resource.Id.btnBack);
@@ -51,39 +51,33 @@ namespace FusionLOS
         {
             try
             {
-                EditText editBorrowerName = FindViewById<EditText>(Resource.Id.editBorrowerName);
-                EditText editBorrowerSSN = FindViewById<EditText>(Resource.Id.editBorrowerSSN);
-                EditText editBorrowerEmail = FindViewById<EditText>(Resource.Id.editBorrowerEmail);
-                EditText editBorrowerAddress1 = FindViewById<EditText>(Resource.Id.editBorrowerAddress1);
-                EditText editBorrowerAddress2 = FindViewById<EditText>(Resource.Id.editBorrowerAddress2);
-                EditText editBorrowerAddress3 = FindViewById<EditText>(Resource.Id.editBorrowerAddress3);
+                TextView textFirstName = FindViewById<EditText>(Resource.Id.textFirstName);
+                TextView textLastName = FindViewById<EditText>(Resource.Id.textLastName);
+                TextView textBorrowerEmail = FindViewById<EditText>(Resource.Id.textBorrowerEmail);
+                TextView textBorrowerAddress1 = FindViewById<EditText>(Resource.Id.textBorrowerAddress1);
                 EditText editPropertyAddress = FindViewById<EditText>(Resource.Id.editPropertyAddress);
                 EditText editSalesPrice = FindViewById<EditText>(Resource.Id.editSalesPrice);
                 EditText editAppraisedValue = FindViewById<EditText>(Resource.Id.editAppraisedValue);
-                EditText editBaseLoanAmount = FindViewById<EditText>(Resource.Id.editBaseLoanAmount);
-                EditText textProduct = FindViewById<EditText>(Resource.Id.editProduct);
-                EditText textBorrowerEmail = FindViewById<EditText>(Resource.Id.editBorrowerEmail);
+                TextView textBaseLoanAmount = FindViewById<EditText>(Resource.Id.textBaseLoanAmount);
+                
 
                 Loan newLoan = new Loan();
-                newLoan.BorrowerName = editBorrowerName.Text;
-                newLoan.SSN = Convert.ToDouble(editBorrowerSSN.Text);
-                newLoan.email = editBorrowerEmail.Text;
-                newLoan.BorrowerAddress1 = editBorrowerAddress1.Text;
-                newLoan.BorrowerAddress2 = editBorrowerAddress2.Text;
-                newLoan.BorrowerAddress3 = editBorrowerAddress3.Text;
-                newLoan.ApplicationDate = DateTime.Now.ToString("MM/dd/yyyy");
-                newLoan.PropertyAddress = editPropertyAddress.Text;
+                newLoan.FirstName = textFirstName.Text;
+                newLoan.LastName = textLastName.Text;
                 newLoan.email = textBorrowerEmail.Text;
+                newLoan.BorrowerAddress1 = textBorrowerAddress1.Text;
+                newLoan.ApplicationDate = DateTime.Now.ToString("MM/dd/yyyy");
+                newLoan.PropertyAddress = editPropertyAddress.Text;                
                 newLoan.SalesPrice = Convert.ToDouble(editSalesPrice.Text);
                 newLoan.AppraisedValue = Convert.ToDouble(editAppraisedValue.Text);
-                newLoan.BaseLoanAmount = Convert.ToDouble(editBaseLoanAmount.Text);
+                newLoan.BaseLoanAmount = Convert.ToDouble(textBaseLoanAmount.Text);
                 newLoan.LTV = (newLoan.BaseLoanAmount / newLoan.AppraisedValue).ToString() + "%";
 
-                newLoan.Product = textProduct.Text;
+                
                 newLoan.LoanStatus = "New";
                 newLoan.ImportantDates = DateTime.Now.ToString("MM/dd/yyyy");
 
-                CreateLoan(newLoan);
+                //CreateLoan(newLoan);
                 StartActivity(typeof(ListActivity));
             }
             catch (Exception ex)
@@ -111,14 +105,14 @@ namespace FusionLOS
         }
 
         
-        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
-        {
-            Spinner spinner = (Spinner)sender;
-            string toast = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
+        //private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        //{
+        //    Spinner spinner = (Spinner)sender;
+        //    string toast = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
 
-            EditText editProduct = FindViewById<EditText>(Resource.Id.editProduct);
-            editProduct.Text = toast;
-            //Toast.MakeText(this, toast, ToastLength.Long).Show();
-        }
+        //    EditText editProduct = FindViewById<EditText>(Resource.Id.editProduct);
+        //    editProduct.Text = toast;
+        //    //Toast.MakeText(this, toast, ToastLength.Long).Show();
+        //}
     }
 }

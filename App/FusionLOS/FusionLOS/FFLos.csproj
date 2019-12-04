@@ -212,10 +212,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accordion.cs" />
+    <Compile Include="AccordionView.cs" />
     <Compile Include="ListActivity.cs" />
     <Compile Include="LoanCreateActivity.cs" />
     <Compile Include="LoanDetailActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MainActivity1.cs" />
     <Compile Include="MapActivity.cs" />
     <Compile Include="MenuActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -301,6 +304,15 @@
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\styles1.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
