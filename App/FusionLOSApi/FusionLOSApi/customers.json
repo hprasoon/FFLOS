@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "string",
+    "lastName": "string",
+    "employer": "string",
+    "occupation": "string",
+    "businessType": "string",
+    "addresses": [
+      {
+        "streetLine_1": "string",
+        "streetLine_2": "string",
+        "streetLine_3": "string",
+        "city": "string",
+        "state": "string",
+        "country": "string",
+        "province": "string",
+        "postalCode": "string",
+        "postalCodeExtension": "string",
+        "addressType": "physical"
+      }
+    ],
+    "phones": [
+      {
+        "countryCode": "string",
+        "number": "string",
+        "extension": "string",
+        "phoneType": "work"
+      }
+    ],
+    "emails": [
+      {
+        "address": "string",
+        "emailType": "primary"
+      }
+    ],
+    "dateOfBirth": "2019-12-03",
+    "coreIdentifications": [
+      {
+        "idNumber": "string",
+        "idType": "Personal"
+      }
+    ]
+  }
+]
