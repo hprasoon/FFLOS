@@ -41,5 +41,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
         android:background="#2C0980"
+        android:textColor="#FFF"
         android:layout_marginLeft="0.0dp" />
 </LinearLayout>
