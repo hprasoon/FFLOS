@@ -13,6 +13,7 @@ namespace FusionLOS
     {
         Button btnSubmit;
         Button btnBack;
+        Button btnMap;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,14 +30,21 @@ namespace FusionLOS
 
             btnSubmit = FindViewById<Button>(Resource.Id.btnSubmit);
             btnBack = FindViewById<Button>(Resource.Id.btnBack);
+            btnMap = FindViewById<Button>(Resource.Id.btnMap);
 
             btnSubmit.Click += BtnSubmit_Click;
             btnBack.Click += BtnBack_Click;
+            btnMap.Click += BtnMap_Click;
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
             StartActivity(typeof(MenuActivity));
+        }
+
+        private void BtnMap_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(MapActivity));
         }
 
         private void BtnSubmit_Click(object sender, EventArgs e)

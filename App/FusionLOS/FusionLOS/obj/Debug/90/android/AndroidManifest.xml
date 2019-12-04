@@ -4,6 +4,9 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:allowBackup="true" android:label="@string/app_name" android:icon="@drawable/icon" android:name="android.app.Application" android:debuggable="true">
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCWd-MPKRKInhsiuczKpvh0ZUmFonpBkKw" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:label="Loan Pipeline" android:name="md52565d4683fcd23ce49533847bbeb7ae3.ListActivity" />
     <activity android:label="Create Loan" android:name="md52565d4683fcd23ce49533847bbeb7ae3.LoanCreateActivity" />
     <activity android:label="Loan Details" android:name="md52565d4683fcd23ce49533847bbeb7ae3.LoanDetailActivity" />
@@ -13,7 +16,10 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="Map" android:name="md52565d4683fcd23ce49533847bbeb7ae3.MapActivity" />
     <activity android:label="Menu" android:name="md52565d4683fcd23ce49533847bbeb7ae3.MenuActivity" />
+    <service android:name="md5dcb6eccdc824e0677ffae8ccdde42930.KeepAliveService" />
+    <receiver android:enabled="true" android:exported="false" android:name="md51558244f76c53b6aeda52c8a337f2c37.PowerSaveModeBroadcastReceiver" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="FusionLOS.FusionLOS.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
@@ -22,5 +28,8 @@
         <category android:name="mono.android.intent.category.SEPPUKU.FusionLOS.FusionLOS" />
       </intent-filter>
     </receiver>
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
   </application>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 </manifest>

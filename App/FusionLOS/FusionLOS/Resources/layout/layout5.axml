@@ -14,6 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textBorrowerName" />
         <EditText
             android:layout_width="match_parent"
@@ -27,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textBorrowerSSN" />
         <EditText
             android:layout_width="match_parent"
@@ -40,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textBorrowerEmail" />
         <EditText
             android:layout_width="match_parent"
@@ -53,6 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textBorrowerAddress1" />
         <EditText
             android:layout_width="match_parent"
@@ -66,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textBorrowerAddress2" />
         <EditText
             android:layout_width="match_parent"
@@ -79,6 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textBorrowerAddress3" />
         <EditText
             android:layout_width="match_parent"
@@ -92,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textPropertyAddress" />
         <EditText
             android:layout_width="match_parent"
@@ -105,6 +112,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textSalesPrice" />
         <EditText
             android:layout_width="match_parent"
@@ -118,6 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="21dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textAppraisedValue" />
         <EditText
             android:layout_width="match_parent"
@@ -131,6 +140,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textBaseLoanAmount" />
         <EditText
             android:layout_width="match_parent"
@@ -144,6 +154,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:paddingLeft="8dp"
+            android:textColor="#D0D0D0"
             android:id="@+id/textProduct" />
         <LinearLayout
             android:orientation="horizontal"
@@ -182,6 +193,14 @@
                 android:textColor="#FFF"
                 android:layout_marginLeft="8.0dp"
                 android:text="Submit" />
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dp"
+                android:background="#2C0980"
+                android:textColor="#FFF"
+                android:layout_marginLeft="8.0dp"
+                android:text="Map" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
