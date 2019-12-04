@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace FusionLOS
 {
-    [Activity(Label = "Menu")]
+    [Activity(Label = "Welcome, Sally")]
     public class MenuActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

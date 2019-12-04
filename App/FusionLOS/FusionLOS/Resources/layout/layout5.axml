@@ -4,6 +4,7 @@
     android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+    android:background="@drawable/bg_6">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -13,60 +14,96 @@
             android:text="First Name"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="22dp"
             android:paddingLeft="8dp"
+            android:textSize="17dp"
             android:textColor="#D0D0D0"
             android:id="@+id/textFirstName" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="8dp"
+            android:textColor="#FFF"
+            android:id="@+id/editFirstName" />
         <TextView
             android:text="Last Name"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="22dp"
             android:paddingLeft="8dp"
+            android:textSize="17dp"
             android:textColor="#D0D0D0"
             android:id="@+id/textLastName" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="8dp"
+            android:textColor="#FFF"
+            android:id="@+id/editLastName" />
         <TextView
             android:text="Email"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="22dp"
             android:paddingLeft="8dp"
+            android:textSize="17dp"
             android:textColor="#D0D0D0"
             android:id="@+id/textBorrowerEmail" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="8dp"
+            android:textColor="#FFF"
+            android:id="@+id/editBorrowerEmail" />
         <TextView
             android:text="Address"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="22dp"
             android:paddingLeft="8dp"
+            android:textSize="17dp"
             android:textColor="#D0D0D0"
             android:id="@+id/textBorrowerAddress1" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="8dp"
+            android:textColor="#FFF"
+            android:id="@+id/editBorrowerAddress1" />
         <TextView
             android:text="Base Loan Amount"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="22dp"
             android:paddingLeft="8dp"
+            android:textSize="17dp"
             android:textColor="#D0D0D0"
             android:id="@+id/textBaseLoanAmount" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="8dp"
+            android:textColor="#FFF"
+            android:id="@+id/editBaseLoanAmount" />
         <TextView
             android:text="Property Address"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="22dp"
             android:paddingLeft="8dp"
+            android:textSize="17dp"
             android:textColor="#D0D0D0"
             android:id="@+id/textPropertyAddress" />
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:paddingLeft="8dp"
             android:textColor="#FFF"
             android:id="@+id/editPropertyAddress" />
         <Button
             android:id="@+id/btnMap"
             android:layout_width="wrap_content"
-            android:layout_height="40.0dp"
+            android:layout_height="20.0dp"
             android:background="#2C0980"
             android:textColor="#FFF"
             android:layout_marginLeft="8.0dp"
@@ -75,13 +112,14 @@
             android:text="Appraised Value"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
-            android:layout_height="21dp"
+            android:layout_height="22dp"
             android:paddingLeft="8dp"
+            android:textSize="17dp"
             android:textColor="#D0D0D0"
             android:id="@+id/textAppraisedValue" />
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:paddingLeft="8dp"
             android:textColor="#FFF"
             android:id="@+id/editAppraisedValue" />
@@ -89,13 +127,14 @@
             android:text="Sales Price"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="22dp"
             android:paddingLeft="8dp"
+            android:textSize="17dp"
             android:textColor="#D0D0D0"
             android:id="@+id/textSalesPrice" />
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:paddingLeft="8dp"
             android:textColor="#FFF"
             android:id="@+id/editSalesPrice" />
@@ -104,7 +143,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="60.0dp"
+            android:layout_height="40.0dp"
             android:gravity="center">
             <Button
                 android:id="@+id/btnBack"

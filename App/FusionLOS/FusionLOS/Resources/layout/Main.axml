@@ -13,12 +13,12 @@
     android:layerType="none">
 
     <TextView
-        android:text="Account Number"
+        android:text="Consumer Number"
         android:layout_width="match_parent"
         android:layout_marginRight="15.0dp"
         android:layout_marginLeft="15.0dp"
-        android:layout_marginTop="50.0dp"
-        android:layout_height="20dp"
+        android:layout_marginTop="200.0dp"
+        android:layout_height="25dp"
         android:id="@+id/textView1"
         android:textColor="#D0D0D0"
         tools:text="Account Number"
@@ -31,7 +31,7 @@
         android:paddingTop="7dp"
         android:paddingLeft="8dp"
         android:id="@+id/editText2"        
-        android:text="98655555501"
+        android:text="38655555-831"
         android:hint="Password"
         android:background="@drawable/editextrounded"
         android:textColor="@android:color/background_dark"

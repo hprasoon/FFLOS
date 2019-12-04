@@ -12,7 +12,9 @@ namespace FusionLOS
 	{
 		public DateTime Date { get; set; }
 		public double Amount { get; set; }
-	}
+        public string Document { get; set; }
+        public string Title { get; set; }
+    }
 
 	public class Section
 	{ 
@@ -29,7 +31,7 @@ namespace FusionLOS
 	{
 		public AccordionViewPage()
 		{
-			this.Title = "Accordion";
+			this.Title = "Loan Tracking";
 
 			var template = new DataTemplate(typeof(DefaultTemplate));
 
@@ -38,13 +40,23 @@ namespace FusionLOS
 			view.Template.SetBinding(AccordionSectionView.TitleProperty, "Title");
 			view.Template.SetBinding(AccordionSectionView.ItemsSourceProperty, "List");
 
-			view.BindingContext =
+            view.BindingContext =
 				new ViewModel
 				{ 
 					List = new List<Section> {
-						new Section
+                        new Section
+                        {
+                            Title = "Required Documents",
+                            List = new List<ShoppingCart> {
+                                new ShoppingCart { Document = "Tax Return"},
+                                new ShoppingCart { Document = "W2S"},
+                                new ShoppingCart { Document = "1099"},
+                                new ShoppingCart { Document = "Income Certificate"},
+                            }
+                        },
+                        new Section
 						{
-							Title = "December",
+							Title = "Order Credit",
 							List = new List<ShoppingCart> {
 								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
 								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
@@ -58,7 +70,7 @@ namespace FusionLOS
 						},
 						new Section
 						{
-							Title = "November",
+							Title = "Order Approval",
 							List = new List<ShoppingCart> {
 								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
 								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
@@ -72,7 +84,7 @@ namespace FusionLOS
 						},
 						new Section
 						{
-							Title = "October",
+							Title = "Processing",
 							List = new List<ShoppingCart> {
 								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
 								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
@@ -86,7 +98,7 @@ namespace FusionLOS
 						},
 						new Section
 						{
-							Title = "September",
+							Title = "Underwriting",
 							List = new List<ShoppingCart> {
 								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
 								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
@@ -101,26 +113,11 @@ namespace FusionLOS
 						},
 						new Section
 						{
-							Title = "August",
+							Title = "Closing",
 							List = new List<ShoppingCart> {
 								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 }
 							}
-						},
-						new Section
-						{
-							Title = "July",
-							List = new List<ShoppingCart> {
-								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
-								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
-								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
-								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
-								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
-								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
-								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
-								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 },
-								new ShoppingCart { Date = DateTime.UtcNow, Amount = 10.05 }
-							}
-						},
+						}
 					}
 				};
 			this.Content = view;

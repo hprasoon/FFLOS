@@ -5,6 +5,7 @@ using Android.Widget;
 using System.Net;
 using Newtonsoft.Json;
 using System.IO;
+using Android.Content;
 
 namespace FusionLOS
 {
@@ -28,6 +29,15 @@ namespace FusionLOS
             //adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             //spinner.Adapter = adapter;
 
+            EditText editFirstName = FindViewById<EditText>(Resource.Id.editFirstName);
+            EditText editLastName = FindViewById<EditText>(Resource.Id.editLastName);
+            EditText editBorrowerEmail = FindViewById<EditText>(Resource.Id.editBorrowerEmail);
+            EditText editBorrowerAddress1 = FindViewById<EditText>(Resource.Id.editBorrowerAddress1);
+            EditText editBaseLoanAmount = FindViewById<EditText>(Resource.Id.editBaseLoanAmount);
+
+
+
+
             btnSubmit = FindViewById<Button>(Resource.Id.btnSubmit);
             btnBack = FindViewById<Button>(Resource.Id.btnBack);
             btnMap = FindViewById<Button>(Resource.Id.btnMap);
@@ -44,33 +54,42 @@ namespace FusionLOS
 
         private void BtnMap_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(MapActivity));
+            //StartActivity(typeof(MapActivity));
+            EditText editPropertyAddress = FindViewById<EditText>(Resource.Id.editPropertyAddress);
+            EditText editAppraisedValue = FindViewById<EditText>(Resource.Id.editAppraisedValue);
+
+            Android.Net.Uri gmmIntentUri = Android.Net.Uri.Parse("geo:0,0?q=" + editPropertyAddress.Text);
+            Intent mapIntent = new Intent(Intent.ActionView, gmmIntentUri);
+            mapIntent.SetPackage("com.google.android.apps.maps");
+            StartActivity(mapIntent);
+
+            editPropertyAddress.Text = editPropertyAddress.Text + " Charleston, SC 29403 USA";
+            editAppraisedValue.Text = "200000";
         }
 
         private void BtnSubmit_Click(object sender, EventArgs e)
         {
             try
             {
-                TextView textFirstName = FindViewById<EditText>(Resource.Id.textFirstName);
-                TextView textLastName = FindViewById<EditText>(Resource.Id.textLastName);
-                TextView textBorrowerEmail = FindViewById<EditText>(Resource.Id.textBorrowerEmail);
-                TextView textBorrowerAddress1 = FindViewById<EditText>(Resource.Id.textBorrowerAddress1);
+                EditText editFirstName = FindViewById<EditText>(Resource.Id.editFirstName);
+                EditText editLastName = FindViewById<EditText>(Resource.Id.editLastName);
+                EditText editBorrowerEmail = FindViewById<EditText>(Resource.Id.editBorrowerEmail);
+                EditText editBorrowerAddress1 = FindViewById<EditText>(Resource.Id.editBorrowerAddress1);
                 EditText editPropertyAddress = FindViewById<EditText>(Resource.Id.editPropertyAddress);
                 EditText editSalesPrice = FindViewById<EditText>(Resource.Id.editSalesPrice);
                 EditText editAppraisedValue = FindViewById<EditText>(Resource.Id.editAppraisedValue);
-                TextView textBaseLoanAmount = FindViewById<EditText>(Resource.Id.textBaseLoanAmount);
-                
+                EditText editBaseLoanAmount = FindViewById<EditText>(Resource.Id.editBaseLoanAmount);
 
                 Loan newLoan = new Loan();
-                newLoan.FirstName = textFirstName.Text;
-                newLoan.LastName = textLastName.Text;
-                newLoan.email = textBorrowerEmail.Text;
-                newLoan.BorrowerAddress1 = textBorrowerAddress1.Text;
+                newLoan.FirstName = editFirstName.Text;
+                newLoan.LastName = editLastName.Text;
+                newLoan.email = editBorrowerEmail.Text;
+                newLoan.BorrowerAddress1 = editBorrowerAddress1.Text;
                 newLoan.ApplicationDate = DateTime.Now.ToString("MM/dd/yyyy");
                 newLoan.PropertyAddress = editPropertyAddress.Text;                
                 newLoan.SalesPrice = Convert.ToDouble(editSalesPrice.Text);
                 newLoan.AppraisedValue = Convert.ToDouble(editAppraisedValue.Text);
-                newLoan.BaseLoanAmount = Convert.ToDouble(textBaseLoanAmount.Text);
+                newLoan.BaseLoanAmount = Convert.ToDouble(editBaseLoanAmount.Text);
                 newLoan.LTV = (newLoan.BaseLoanAmount / newLoan.AppraisedValue).ToString() + "%";
 
                 
@@ -78,7 +97,7 @@ namespace FusionLOS
                 newLoan.ImportantDates = DateTime.Now.ToString("MM/dd/yyyy");
 
                 //CreateLoan(newLoan);
-                StartActivity(typeof(ListActivity));
+                StartActivity(typeof(MainActivity1));
             }
             catch (Exception ex)
             {

@@ -58,7 +58,6 @@ set;C:\Users\ajith.kizhakkethodi\Desktop\Hack\App\FFLOS\App\FusionLOS\FusionLOS\
 set;C:\Users\ajith.kizhakkethodi\Desktop\Hack\App\FFLOS\App\FusionLOS\FusionLOS\obj\Debug\90\lp\39\jl\res\anim\exittoright.xml
 shape;obj\Debug\90\res\drawable\edit.xml
 solid;obj\Debug\90\res\drawable\edit.xml
-Spinner;obj\Debug\90\res\layout\layout5.xml
 string;obj\Debug\90\res\values\strings.xml
 string-array;obj\Debug\90\res\values\strings.xml
 style;C:\Users\ajith.kizhakkethodi\Desktop\Hack\App\FFLOS\App\FusionLOS\FusionLOS\obj\Debug\90\lp\39\jl\res\values\styles.xml
