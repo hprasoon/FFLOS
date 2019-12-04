@@ -74,13 +74,15 @@ namespace CallRequestResponseService
             }
         }
 
-        public static async Task<string> InvokeInitialCheckService(Eligibilityparameters eligParams)
+        public static async Task<bool> InvokeInitialCheckService(Eligibilityparameters eligParams)
         {
-            using (var client = new HttpClient())
+            try
             {
-                var scoreRequest = new
+                using (var client = new HttpClient())
                 {
-                    Inputs = new Dictionary<string, StringTable>() {
+                    var scoreRequest = new
+                    {
+                        Inputs = new Dictionary<string, StringTable>() {
                         {
                             "input1",
                             new StringTable()
@@ -90,40 +92,44 @@ namespace CallRequestResponseService
                             }
                         },
                     },
-                    GlobalParameters = new Dictionary<string, string>()
+                        GlobalParameters = new Dictionary<string, string>()
+                        {
+                        }
+                    };
+                    const string apiKey = "SP2YNJ46jle/OttUR4NG2G+2DuURyynT/A+7Rc7jVP1kP63dJIZJ2Aizn4Ps9Q5sryHh7bkLDNkpKnJ4QulYoA=="; // Replace this with the API key for the web service
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
+
+                    client.BaseAddress = new Uri("https://ussouthcentral.services.azureml.net/workspaces/e823b504482f4aaabad95f380e685cae/services/67f6954049de4038bd6f32f00668e564/execute?api-version=2.0&details=true");
+
+                    // WARNING: The 'await' statement below can result in a deadlock if you are calling this code from the UI thread of an ASP.Net application.
+                    // One way to address this would be to call ConfigureAwait(false) so that the execution does not attempt to resume on the original context.
+                    // For instance, replace code such as:
+                    //      result = await DoSomeTask()
+                    // with the following:
+                    //      result = await DoSomeTask().ConfigureAwait(false)
+
+                    HttpResponseMessage response = await client.PostAsJsonAsync("", scoreRequest);
+
+                    if (response.IsSuccessStatusCode)
                     {
+                        string result = await response.Content.ReadAsStringAsync();
                     }
-                };
-                const string apiKey = "SP2YNJ46jle/OttUR4NG2G+2DuURyynT/A+7Rc7jVP1kP63dJIZJ2Aizn4Ps9Q5sryHh7bkLDNkpKnJ4QulYoA=="; // Replace this with the API key for the web service
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
+                    else
+                    {
+                        Console.WriteLine(string.Format("The request failed with status code: {0}", response.StatusCode));
 
-                client.BaseAddress = new Uri("https://ussouthcentral.services.azureml.net/workspaces/e823b504482f4aaabad95f380e685cae/services/67f6954049de4038bd6f32f00668e564/execute?api-version=2.0&details=true");
+                        // Print the headers - they include the requert ID and the timestamp, which are useful for debugging the failure
+                        Console.WriteLine(response.Headers.ToString());
 
-                // WARNING: The 'await' statement below can result in a deadlock if you are calling this code from the UI thread of an ASP.Net application.
-                // One way to address this would be to call ConfigureAwait(false) so that the execution does not attempt to resume on the original context.
-                // For instance, replace code such as:
-                //      result = await DoSomeTask()
-                // with the following:
-                //      result = await DoSomeTask().ConfigureAwait(false)
-
-                HttpResponseMessage response = await client.PostAsJsonAsync("", scoreRequest);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    string result = await response.Content.ReadAsStringAsync();
-                }
-                else
-                {
-                    Console.WriteLine(string.Format("The request failed with status code: {0}", response.StatusCode));
-
-                    // Print the headers - they include the requert ID and the timestamp, which are useful for debugging the failure
-                    Console.WriteLine(response.Headers.ToString());
-
-                    string responseContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine(responseContent);
+                        string responseContent = await response.Content.ReadAsStringAsync();
+                        Console.WriteLine(responseContent);
+                    }
                 }
             }
-            return "";
+            catch (Exception e)
+            {
+            }
+            return true;
         }
 
         public static async Task<ConsumerDetais> GetFFDCConsumerData(int ConsumerId)
