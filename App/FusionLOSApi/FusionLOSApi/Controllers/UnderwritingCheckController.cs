@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿using System.Web.Http;
 
 namespace FusionLOS.Controllers
 {
     public class UnderwritingCheckController : ApiController
     {
-        public bool Get([FromBody]string customerId)
+        public bool Get(int id)
         {
-            return customerId?.Length > 0 ? true : false;
+            return id > 0 ? true : false;
         }
     }
 }

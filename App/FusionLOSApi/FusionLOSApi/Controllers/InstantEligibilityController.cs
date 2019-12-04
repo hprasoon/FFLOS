@@ -7,9 +7,9 @@ namespace FusionLOS.Controllers
 {
     public class InstantEligibilityController : ApiController
     {
-        public async Task<bool> InstantEligibilityCheck([FromBody]string customerId)
+        public async Task<bool> Get(int id)
         {
-            return await RequestResponseService(Convert.ToInt32(customerId));
+            return await RequestResponseService(id);
         }
 
         public async Task<bool> RequestResponseService(int consumerid)

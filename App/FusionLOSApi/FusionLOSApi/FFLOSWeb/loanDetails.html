@@ -18,7 +18,7 @@
 	<link href="./assets/jquery.mCustomScrollbar.css" rel="stylesheet">
 	<link href="./assets/weather-icons.min.css" rel="stylesheet">
 	<!--Morris Chart -->
-	<link rel="stylesheet" href="./assets/morris.css">
+	<!-- <link rel="stylesheet" href="./assets/morris.css"> -->
 
 	<link href="./assets/style.css" rel="stylesheet">
 	<link href="./assets/responsive.css" rel="stylesheet">
@@ -354,7 +354,7 @@
 												<div class="baseline-info">
 													<div>
 														<a href="#" class="default-color">
-															<strong>Mark Henry</strong>
+															<strong>Hermitage Sally</strong>
 														</a> Loan Approval & Closing
 													</div>
 													<span class="text-muted">06:00 PM Sat, 10 Jan 2019</span>
@@ -364,7 +364,7 @@
 													<div class="baseline-info">
 														<div>
 																<a href="#" class="default-color">
-																	<strong>Mark Henry</strong>
+																	<strong>Hermitage Sally</strong>
 																</a> Updated existing credit documents
 															</div>
 															<span class="text-muted">06:00 PM Sat, 10 Jan 2019</span>
@@ -374,7 +374,7 @@
 												<div class="baseline-info">
 													<div>
 															<a href="#" class="default-color">
-														<strong>Mark Henry</strong>
+														<strong>Hermitage Sally</strong>
 													</a> Added W2S details</div>
 													<span class="text-muted">05:00 PM Sat, 10 Jan 2019</span>
 												</div>
@@ -383,7 +383,7 @@
 												<div class="baseline-info">
 													<div>
 														<a href="#" class="default-color">
-															<strong>Mark Henry</strong>
+															<strong>Hermitage Sally</strong>
 														</a> Added Property details</div>
 													<span class="text-muted">10:10 PM Sat, 10 Jan 2019</span>
 												</div>
@@ -392,7 +392,7 @@
 												<div class="baseline-info">
 													<div>
 														<a href="#" class="default-color">
-															<strong>Mark Henry</strong>
+															<strong>Hermitage Sally</strong>
 														</a> Added Credit details</div>
 													<span class="text-muted">10:10 PM Sat, 10 Jan 2019</span>
 												</div>
@@ -401,7 +401,7 @@
 												<div class="baseline-info">
 													<div>
 														<a href="#" class="default-color">
-															<strong>Mark Henry</strong>
+															<strong>Hermitage Sally</strong>
 														</a> Requested for new Construction Loan</div>
 													<span class="text-muted">10:00 PM Sat, 10 Jan 2019</span>
 												</div>
@@ -421,28 +421,29 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="./assets/jquery.min.js.download"></script>
-	<script type="text/javascript" src="./assets/popper.min.js.download"></script>
-	<script type="text/javascript" src="./assets/bootstrap.min.js.download"></script>
-	<script type="text/javascript" src="./assets/jquery.mCustomScrollbar.concat.min.js.download"></script>
+
+	<script type="text/javascript" src="./assets/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/popper.min.js"></script>
+	<script type="text/javascript" src="./assets/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/jquery.mCustomScrollbar.concat.min.js"></script>
 
 	<!--Morris Chart-->
-	<!-- <script src="./assets/morris.js.download"></script> -->
-	<script src="./assets/raphael-min.js.download"></script>
+	<!-- <script src="./assets/morris.js"></script> -->
+	<script src="./assets/raphael-min.js"></script>
 	<!--morris chart initialization-->
-	<!-- <script src="./assets/morris-init.js.download"></script> -->
+	<!-- <script src="./assets/morris-init.js"></script> -->
 	<!--chartjs Total Profit,New Orders,Yearly Revineue,New Users-->
-	<script src="./assets/Chart.min.js.download"></script>
-	<!-- <script src="./assets/chartjs-init.js.download"></script> -->
+	<script src="./assets/Chart.min.js"></script>
+	<!-- <script src="./assets/chartjs-init.js"></script> -->
 
-	<script type="text/javascript" src="./assets/jquery.dcjqaccordion.2.7.js.download"></script>
-	<script src="./assets/custom.js.download" type="text/javascript"></script>
+	<script type="text/javascript" src="./assets/jquery.dcjqaccordion.2.7.js"></script>
+	<script src="./assets/custom.js" type="text/javascript"></script>
 
-	<script type="javascript" >
+	<script type="text/javascript" >
 
 		$(document).ready(function() {
-			alert('hi');
-			$.getJSON('../notification.json',function(data){
+			
+			$.getJSON('https://losmobile.azurewebsites.net/loanDetails.html',function(data){
 				console.log(data);
 				var output = '<ul>';  
 				$.each(data, function(key,val){
@@ -451,7 +452,7 @@
 				output += '</ul>';
 				$('#update').html(output);
 				});
-
+	
 			$.getJSON('../notificationMessage.json',function(data){
 				console.log(data);
 				var output = '<ul>';  
@@ -461,10 +462,10 @@
 				output += '</ul>';
 				$('#update').html(output);
 				});
-
+	
 			console.log( "ready!" );
 		});
-
+	
 	</script>
 
 </body></html>

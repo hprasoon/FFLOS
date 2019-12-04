@@ -12,9 +12,10 @@ namespace FusionLOS.Controllers
 {
     public class ConsumerController : ApiController
     {
-        public async Task<ConsumerDetais> Get(int consumerId)
+        public ConsumerDetais Get(int id)
         {
-            return await GetFFDCConsumerData(consumerId);
+            var ConsumerData = GetFFDCConsumerData(id);
+            return ConsumerData?.Result;
         }
 
         private static async Task<ConsumerDetais> GetFFDCConsumerData(int ConsumerId)

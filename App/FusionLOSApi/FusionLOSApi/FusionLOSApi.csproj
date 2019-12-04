@@ -145,13 +145,10 @@
     <Content Include="FFLOSWeb\assets\jquery.dcjqaccordion.2.7.js.download" />
     <Content Include="FFLOSWeb\assets\jquery.mCustomScrollbar.concat.min.js.download" />
     <Content Include="FFLOSWeb\assets\jquery.min.js.download" />
-    <Content Include="FFLOSWeb\assets\morris-init.js.download" />
-    <Content Include="FFLOSWeb\assets\morris.js.download" />
     <Content Include="FFLOSWeb\assets\popper.min.js.download" />
     <Content Include="FFLOSWeb\assets\raphael-min.js.download" />
     <Content Include="notification.json" />
     <Content Include="notificationMessage.json" />
-    <Content Include="FFLOSWeb\Simple-Line-Icons %281%29.woff2" />
     <None Include="Service References\MortgegeOrigination\MortgagebotOriginationImport.disco" />
     <None Include="Service References\MortgegeOrigination\configuration91.svcinfo" />
     <None Include="Service References\MortgegeOrigination\configuration.svcinfo" />
