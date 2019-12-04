@@ -18,6 +18,11 @@ namespace FusionLOS.Controllers
         public void Post([FromBody]Lead newloan)
         {
             new Lead().Add(newloan);
+            new Notification().Add(new Notification
+            {
+                statusMessage = "New loan created",
+                updateduser = newloan.borrowers[0].name.firstName
+            });            
         }
     }
 }

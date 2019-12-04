@@ -224,7 +224,6 @@ namespace FusionLOS.Models
             get;
             set;
         }
-
     }
 
     public class loandetails
