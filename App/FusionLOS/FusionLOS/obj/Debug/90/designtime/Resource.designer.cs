@@ -73,13 +73,28 @@ namespace FusionLOS
 			public const int bg_4 = 2130837507;
 			
 			// aapt resource value: 0x7F020004
-			public const int edit = 2130837508;
+			public const int bg_5 = 2130837508;
 			
 			// aapt resource value: 0x7F020005
-			public const int editextrounded = 2130837509;
+			public const int bg_6 = 2130837509;
 			
 			// aapt resource value: 0x7F020006
-			public const int icon = 2130837510;
+			public const int cross = 2130837510;
+			
+			// aapt resource value: 0x7F020007
+			public const int edit = 2130837511;
+			
+			// aapt resource value: 0x7F020008
+			public const int editextrounded = 2130837512;
+			
+			// aapt resource value: 0x7F020009
+			public const int icon = 2130837513;
+			
+			// aapt resource value: 0x7F02000A
+			public const int images = 2130837514;
+			
+			// aapt resource value: 0x7F02000B
+			public const int tick = 2130837515;
 			
 			static Drawable()
 			{
@@ -116,151 +131,142 @@ namespace FusionLOS
 			public const int buttonCreateLoan = 2130903046;
 			
 			// aapt resource value: 0x7F030007
-			public const int buttonLoanList = 2130903047;
+			public const int editAppraisedValue = 2130903047;
 			
 			// aapt resource value: 0x7F030008
-			public const int editAppraisedValue = 2130903048;
+			public const int editBaseLoanAmount = 2130903048;
 			
 			// aapt resource value: 0x7F030009
-			public const int editBaseLoanAmount = 2130903049;
+			public const int editBorrowerAddress1 = 2130903049;
 			
 			// aapt resource value: 0x7F03000A
-			public const int editBorrowerAddress1 = 2130903050;
+			public const int editBorrowerAddress2 = 2130903050;
 			
 			// aapt resource value: 0x7F03000B
-			public const int editBorrowerAddress2 = 2130903051;
+			public const int editBorrowerAddress3 = 2130903051;
 			
 			// aapt resource value: 0x7F03000C
-			public const int editBorrowerAddress3 = 2130903052;
+			public const int editBorrowerEmail = 2130903052;
 			
 			// aapt resource value: 0x7F03000D
-			public const int editBorrowerEmail = 2130903053;
+			public const int editBorrowerName = 2130903053;
 			
 			// aapt resource value: 0x7F03000E
-			public const int editBorrowerName = 2130903054;
+			public const int editBorrowerSSN = 2130903054;
 			
 			// aapt resource value: 0x7F03000F
-			public const int editBorrowerSSN = 2130903055;
+			public const int editProduct = 2130903055;
 			
 			// aapt resource value: 0x7F030010
-			public const int editProduct = 2130903056;
+			public const int editPropertyAddress = 2130903056;
 			
 			// aapt resource value: 0x7F030011
-			public const int editPropertyAddress = 2130903057;
+			public const int editSalesPrice = 2130903057;
 			
 			// aapt resource value: 0x7F030012
-			public const int editSalesPrice = 2130903058;
+			public const int editText2 = 2130903058;
 			
 			// aapt resource value: 0x7F030013
-			public const int editText1 = 2130903059;
+			public const int email = 2130903059;
 			
 			// aapt resource value: 0x7F030014
-			public const int editText2 = 2130903060;
+			public const int linearLayout1 = 2130903060;
 			
 			// aapt resource value: 0x7F030015
-			public const int email = 2130903061;
+			public const int linearLayout2 = 2130903061;
 			
 			// aapt resource value: 0x7F030016
-			public const int linearLayout1 = 2130903062;
+			public const int listView1 = 2130903062;
 			
 			// aapt resource value: 0x7F030017
-			public const int linearLayout2 = 2130903063;
+			public const int scroll = 2130903063;
 			
 			// aapt resource value: 0x7F030018
-			public const int listView1 = 2130903064;
+			public const int spinner = 2130903064;
 			
 			// aapt resource value: 0x7F030019
-			public const int scroll = 2130903065;
+			public const int SSN = 2130903065;
 			
 			// aapt resource value: 0x7F03001A
-			public const int spinner = 2130903066;
+			public const int textApplicationDate = 2130903066;
 			
 			// aapt resource value: 0x7F03001B
-			public const int SSN = 2130903067;
+			public const int textAppraisedValue = 2130903067;
 			
 			// aapt resource value: 0x7F03001C
-			public const int textApplicationDate = 2130903068;
+			public const int textBaseLoanAmount = 2130903068;
 			
 			// aapt resource value: 0x7F03001D
-			public const int textAppraisedValue = 2130903069;
+			public const int textBorrowerAddress1 = 2130903069;
 			
 			// aapt resource value: 0x7F03001E
-			public const int textAuthentication = 2130903070;
+			public const int textBorrowerAddress2 = 2130903070;
 			
 			// aapt resource value: 0x7F03001F
-			public const int textBaseLoanAmount = 2130903071;
+			public const int textBorrowerAddress3 = 2130903071;
 			
 			// aapt resource value: 0x7F030020
-			public const int textBorrowerAddress1 = 2130903072;
+			public const int textBorrowerEmail = 2130903072;
 			
 			// aapt resource value: 0x7F030021
-			public const int textBorrowerAddress2 = 2130903073;
+			public const int textBorrowerName = 2130903073;
 			
 			// aapt resource value: 0x7F030022
-			public const int textBorrowerAddress3 = 2130903074;
+			public const int textBorrowerSSN = 2130903074;
 			
 			// aapt resource value: 0x7F030023
-			public const int textBorrowerEmail = 2130903075;
+			public const int textImportantDates = 2130903075;
 			
 			// aapt resource value: 0x7F030024
-			public const int textBorrowerName = 2130903076;
+			public const int textLoanAmount = 2130903076;
 			
 			// aapt resource value: 0x7F030025
-			public const int textBorrowerSSN = 2130903077;
+			public const int textLoanStatus = 2130903077;
 			
 			// aapt resource value: 0x7F030026
-			public const int textImportantDates = 2130903078;
+			public const int textLTV = 2130903078;
 			
 			// aapt resource value: 0x7F030027
-			public const int textLoanAmount = 2130903079;
+			public const int textProduct = 2130903079;
 			
 			// aapt resource value: 0x7F030028
-			public const int textLoanStatus = 2130903080;
+			public const int textPropertyAddress = 2130903080;
 			
 			// aapt resource value: 0x7F030029
-			public const int textLTV = 2130903081;
+			public const int textSalesPrice = 2130903081;
 			
 			// aapt resource value: 0x7F03002A
-			public const int textProduct = 2130903082;
+			public const int textView1 = 2130903082;
 			
 			// aapt resource value: 0x7F03002B
-			public const int textPropertyAddress = 2130903083;
+			public const int textView11 = 2130903083;
 			
 			// aapt resource value: 0x7F03002C
-			public const int textSalesPrice = 2130903084;
+			public const int textView12 = 2130903084;
 			
 			// aapt resource value: 0x7F03002D
-			public const int textView1 = 2130903085;
+			public const int textView13 = 2130903085;
 			
 			// aapt resource value: 0x7F03002E
-			public const int textView11 = 2130903086;
+			public const int textView14 = 2130903086;
 			
 			// aapt resource value: 0x7F03002F
-			public const int textView12 = 2130903087;
+			public const int textView15 = 2130903087;
 			
 			// aapt resource value: 0x7F030030
-			public const int textView13 = 2130903088;
+			public const int textView16 = 2130903088;
 			
 			// aapt resource value: 0x7F030031
-			public const int textView14 = 2130903089;
+			public const int textView2 = 2130903089;
 			
 			// aapt resource value: 0x7F030032
-			public const int textView15 = 2130903090;
+			public const int textview9 = 2130903090;
 			
 			// aapt resource value: 0x7F030033
-			public const int textView16 = 2130903091;
+			public const int textViewComplianceAlert = 2130903091;
 			
 			// aapt resource value: 0x7F030034
-			public const int textView2 = 2130903092;
-			
-			// aapt resource value: 0x7F030035
-			public const int textview9 = 2130903093;
-			
-			// aapt resource value: 0x7F030036
-			public const int textViewComplianceAlert = 2130903094;
-			
-			// aapt resource value: 0x7F030037
-			public const int textViewLoanNumber = 2130903095;
+			public const int textViewLoanNumber = 2130903092;
 			
 			static Id()
 			{
@@ -321,6 +327,22 @@ namespace FusionLOS
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7F060000
+			public const int Theme_Custom = 2131099648;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

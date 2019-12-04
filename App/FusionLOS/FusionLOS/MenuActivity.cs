@@ -23,7 +23,6 @@ namespace FusionLOS
             SetContentView(Resource.Layout.layout6);
 
             FindViewById<Button>(Resource.Id.buttonCreateLoan).Click += buttonCreate_Click;
-            FindViewById<Button>(Resource.Id.buttonLoanList).Click += buttonList_Click;
         }
 
         private void buttonCreate_Click(object sender, EventArgs e)
